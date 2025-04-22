@@ -1,0 +1,23 @@
+.Footer {
+  background-color: rgb(37, 80, 107);
+  color: rgb(0,225,255);
+  font-family: 'Times New Roman',serif;
+  padding: 20px;
+  text-align: center;
+  margin-top: 10px; /* 减少上边距 */
+  font-size: 1.2rem;
+}
+
+.Footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.Footer-content p {
+  margin: 5px 0;
+}
+
+.Footer-stats {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}

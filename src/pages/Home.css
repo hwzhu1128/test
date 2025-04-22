@@ -1,0 +1,223 @@
+.home-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.news-rotator-section {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-section {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+.left-content {
+  flex: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right-content {
+  flex: 40%;
+}
+
+.notice-board,
+.academic-activities,
+.news-section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.section-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.more-btn {
+  background: none;
+  border: none;
+  color: #1890ff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.more-btn:hover {
+  color: #40a9ff;
+}
+
+.notice-list,
+.activity-list,
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notice-list li,
+.activity-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.notice-list li:hover,
+.activity-list li:hover {
+  color: #1890ff;
+}
+
+.news-list li {
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.news-date {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.news-list p {
+  margin: 5px 0 0;
+  color: #333;
+  cursor: pointer;
+}
+
+.news-list p:hover {
+  color: #1890ff;
+}
+
+/* 在原有样式基础上修改和添加以下样式 */
+
+.right-content {
+  flex: 40%;
+  height: 100%; /* 添加这行 */
+}
+
+.news-section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 100%; /* 添加这行，使新闻栏填满高度 */
+}
+
+/* 修改所有标题的大小 */
+.section-header h2,
+.news-section h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.8rem; /* 改大标题字体 */
+  font-weight: bold;
+}
+
+/* 修改新闻列表样式 */
+.news-list li {
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex; /* 添加这行 */
+  align-items: baseline; /* 添加这行 */
+  gap: 15px; /* 添加这行，控制日期和标题间距 */
+}
+
+.news-date {
+  color: #1890ff; /* 改为蓝色 */
+  font-size: 1rem;
+  white-space: nowrap; /* 防止日期换行 */
+}
+
+.news-title {
+  margin: 0;
+  color: #333;
+  cursor: pointer;
+  font-size: 1.1rem;
+  flex: 1; /* 添加这行，让标题占据剩余空间 */
+}
+
+.news-title:hover {
+  color: #1890ff;
+}
+
+.content-section {
+  width: 80%;  /* 从90%改为80% */
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+.notice-date {
+  color: #0066cc; /* 更深的蓝色 */
+  font-size: 1rem;
+  white-space: nowrap;
+  min-width: 45px;
+  font-weight: 500; /* 稍微加粗一点 */
+}
+
+.notice-list li {
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.notice-title {
+  flex: 1;
+  color: #333;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.notice-title:hover {
+  color: #0066cc; /* 悬停时也使用相同的深蓝色 */
+}
+
+/* 添加或修改以下样式 */
+.notice-date,
+.activity-date {  /* 添加 activity-date */
+  color: #0066cc; /* 更深的蓝色 */
+  font-size: 1rem;
+  white-space: nowrap;
+  min-width: 45px;
+  font-weight: 500;
+}
+
+.notice-list li,
+.activity-list li {  /* 确保 activity-list li 也有相同的样式 */
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.notice-title,
+.activity-title {  /* 添加 activity-title */
+  flex: 1;
+  color: #333;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.notice-title:hover,
+.activity-title:hover {  /* 添加 activity-title hover */
+  color: #0066cc;
+}

@@ -1,0 +1,22 @@
+.structure-container {
+  width: 100%;
+  padding: 10px 20px 20px; /* 增加 padding-top 为 100px，确保标题不被导航栏遮挡 */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.structure-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.structure-image {
+  width: 60%; /* 图片宽度占容器的70% */
+  height: auto; /* 高度自适应 */
+  border-radius: 10px; /* 圆角 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+}

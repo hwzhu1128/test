@@ -1,0 +1,42 @@
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: 95px; /* 按钮宽度 */
+  height: 99%; /* 按钮高度填满图片 */
+  background-color: rgba(0, 0, 0, 0.08) !important; /* 初始背景颜色 */
+  opacity: 1; /* 不需要隐藏 */
+  transition: background-color 0.3s ease; /* 过渡效果 */
+  position: absolute;
+  top: 15.6rem; /* 手动调整顶部位置 */
+  display: flex; /* 使用 flexbox */
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.5) !important; /* 鼠标悬停时背景颜色加深 */
+}
+
+.slick-prev:active,
+.slick-next:active {
+  background-color: rgba(0, 0, 0, 0.2) !important; /* 点击后恢复到初始背景颜色 */
+}
+
+.slick-prev {
+  left: 0; /* 左侧对齐 */
+}
+
+.slick-next {
+  right: 0; /* 右侧对齐 */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 40px; /* 增大箭头大小 */
+  line-height: 1;
+  opacity: 0.75;
+  color: white;
+}
+
